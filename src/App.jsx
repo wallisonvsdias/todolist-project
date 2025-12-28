@@ -24,6 +24,10 @@ function App() {
     ))
   };
  
+  const deleteTask = (id) => {
+    setTasks(tasks.filter(task => task.id !== id));
+  };
+
   return (
     <div className = "container">
       <h1>To-do List</h1>
@@ -46,6 +50,11 @@ function App() {
               <span onClick={() => toggleTask(task.id)}>
                 {task.text}
               </span>
+              <button
+                className = "delete-btn"
+                onClick = {() => deleteTask(task.id)}>
+                  Delete
+                </button>
             </li>
         ))}
       </ul>
