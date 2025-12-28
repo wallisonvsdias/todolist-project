@@ -39,6 +39,11 @@ function App() {
           type="text"
           value={inputText}
           onChange={(event) => setInputText(event.target.value)}
+          onKeyDown = {(event) => {
+            if (event.key === "Enter") {
+                addTask();
+            }
+          }}
           placeholder="What do you have to do?"
         />
         <button onClick={addTask}>
