@@ -125,3 +125,7 @@ li.completed span {
     background-color: #ff4b4b;
     color: white;
 }
+
+p {
+    text-align: center;
+}
