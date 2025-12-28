@@ -42,7 +42,7 @@ function App() {
           placeholder="What do you have to do?"
         />
         <button onClick={addTask}>
-          Adicionar
+          Add
         </button>
       </div>
 
