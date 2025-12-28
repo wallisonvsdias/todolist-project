@@ -63,6 +63,7 @@ function App() {
           </li>
         ))}
       </ul>
+      <p>by Wallison Dias</p>
     </div>
   )
 }
